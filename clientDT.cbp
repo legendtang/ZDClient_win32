@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="clientNX" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\clientDT" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\clientDT" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add library="gdi32" />
+			<Add library="user32" />
+			<Add library="kernel32" />
+		</Linker>
+		<Unit filename="clientDT.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="commondef.h" />
+		<Unit filename="eap_protocol.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="eap_protocol.h" />
+		<Unit filename="md5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="md5.h" />
+		<Unit filename="rsrc.h" />
+		<Unit filename="window.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="windows_resource.aps" />
+		<Unit filename="windows_resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="zdclient.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="zdclient.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
